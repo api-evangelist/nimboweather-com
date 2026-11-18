@@ -64,7 +64,7 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Nimbo Weather provides a minute‑by‑minute rain nowcast API covering most of Europe. Users can request a point forecast via a simple HTTP GET and receive a textual description of upcoming rain, plus map tiles in XYZ format for the next three hours. The service offers a free tier with 20,000 calls per month and commercial usage included, with no tracking, ads, or data storage of queries.
+Nimbo Weather delivers a minute‑by‑minute rain nowcast API for most of Europe, offering point forecasts via a simple HTTP GET that returns detailed textual descriptions and map tiles in XYZ format for the next three hours. The service includes a free tier with 20,000 calls per month, commercial plans, and guarantees no tracking, advertising, or storage of query data. It provides real‑time radar‑based precipitation data, status endpoints, and comprehensive documentation for developers.
 
 **Areas:** Weather · API · Rain · Europe · Forecast
 
@@ -72,20 +72,116 @@ Nimbo Weather provides a minute‑by‑minute rain nowcast API covering most of 
 
 Everything profiled for Nimbo Weather is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/nimboweather-com/](https://apis.io/providers/nimboweather-com/)** — or go straight to one of the APIs or properties below.
 
+### APIs (5)
+
+- [Nimbo Weather Frames API](https://apis.io/apis/nimboweather-com/nimboweather-com-frames-api/) — The frames API from Nimbo Weather — 1 operation(s) for frames.
+- [Nimbo Weather Keys API](https://apis.io/apis/nimboweather-com/nimboweather-com-keys-api/) — The keys API from Nimbo Weather — 1 operation(s) for keys.
+- [Nimbo Weather Nowcast API](https://apis.io/apis/nimboweather-com/nimboweather-com-nowcast-api/) — The nowcast API from Nimbo Weather — 1 operation(s) for nowcast.
+- [Nimbo Weather Status API](https://apis.io/apis/nimboweather-com/nimboweather-com-status-api/) — The status API from Nimbo Weather — 1 operation(s) for status.
+- [Nimbo Weather Tiles API](https://apis.io/apis/nimboweather-com/nimboweather-com-tiles-api/) — The tiles API from Nimbo Weather — 3 operation(s) for tiles.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Nimbo Weather Agentic Access](https://apis.io/agentic-access/nimboweather-com/nimboweather-com-agentic-access/)
+
+#### JSON Schema (5)
+
+The data models the API reads and writes.
+
+- [KeyUsage](https://apis.io/schemas/nimboweather-com/nimboweather-com-key-usage/)
+- [NowcastAnswer](https://apis.io/schemas/nimboweather-com/nimboweather-com-nowcast-answer/)
+- [Palettes](https://apis.io/schemas/nimboweather-com/nimboweather-com-palettes/)
+- [StatusAnswer](https://apis.io/schemas/nimboweather-com/nimboweather-com-status-answer/)
+- [TilesIndex](https://apis.io/schemas/nimboweather-com/nimboweather-com-tiles-index/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Nimboweather Com Context](https://apis.io/jsonld/nimboweather-com/nimboweather-com-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Nimbo Weather API Rules](https://apis.io/rules/nimboweather-com/nimboweather-com-rules/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Nimbo Weather Authentication](https://apis.io/security/nimboweather-com/nimboweather-com-authentication/)
+- [Nimbo Weather Domain Security](https://apis.io/security/nimboweather-com/nimboweather-com-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Nimbo Weather Plans Pricing](https://apis.io/plans/nimboweather-com/nimboweather-com-plans-pricing/)
+
 ## Where to find this API
 
 Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://nimboweather.com)
 - [Documentation](https://nimboweather.com/api)
+- [Getting started](https://nimboweather.com/guides)
 - [Pricing](https://nimboweather.com/pricing)
 - [Sign up](https://nimboweather.com/dashboard)
 - [Terms of service](https://nimboweather.com/terms)
 - [Privacy policy](https://nimboweather.com/privacy)
+- [GitHub](https://github.com/nimboweather)
+- [Status](https://nimboweather.com/status)
 
 ## API Evangelist rating
 
-Not yet rated. See [apis.io/providers/nimboweather-com/](https://apis.io/providers/nimboweather-com/).
+**Kin Score 52.4** — developing · rubric 0.28.0 · scored 2026-11-18
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 53.6 |
+| Contract governance | 79.1 |
+| Operational transparency | 19.0 |
+| Developer ergonomics | 40.5 |
+| Access clarity | 59.1 |
+
+**Agent readiness 32.3** — agent-ready
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | unknown |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | verified |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
+| MCP Tool Quality | na |
+
+**Regulatory alignment 18.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/nimboweather-com/](https://apis.io/providers/nimboweather-com/).
 
 ## How this profile is made
 
